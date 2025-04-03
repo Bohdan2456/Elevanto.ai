@@ -9,11 +9,8 @@ import {
   ChevronDownIcon,
   ChevronUpIcon,
   Cog6ToothIcon,
-  BellAlertIcon,
-  ArrowRightIcon
+  BellAlertIcon
 } from '@heroicons/react/24/outline'
-import { motion } from 'framer-motion'
-import NextStep from './NextStep'
 
 const services = [
   {
@@ -27,7 +24,6 @@ const services = [
       'No coding skills required'
     ],
     icon: ArrowPathIcon,
-    color: 'indigo',
     workflowTitle: 'Stripe → Slack Integration',
     workflowSteps: [
       { name: 'Trigger', description: 'New Payment in Stripe' },
@@ -45,7 +41,6 @@ const services = [
       'Continuously improve with each interaction'
     ],
     icon: ChatBubbleBottomCenterTextIcon,
-    color: 'blue',
     workflowTitle: 'Customer Support Automation',
     workflowSteps: [
       { name: 'Customer', description: 'Asks question on website' },
@@ -64,7 +59,6 @@ const services = [
       'Seamlessly transfer to humans when needed'
     ],
     icon: MicrophoneIcon,
-    color: 'emerald',
     workflowTitle: 'Voice Agent Call Flow',
     workflowSteps: [
       { name: 'Incoming Call', description: 'Customer initiates contact' },
@@ -73,33 +67,6 @@ const services = [
     ]
   },
 ]
-
-const colorClasses = {
-  indigo: {
-    light: 'bg-indigo-50',
-    medium: 'bg-indigo-100',
-    text: 'text-indigo-600',
-    border: 'border-indigo-200',
-    hover: 'hover:bg-indigo-100',
-    icon: 'text-indigo-500'
-  },
-  blue: {
-    light: 'bg-blue-50',
-    medium: 'bg-blue-100',
-    text: 'text-blue-600',
-    border: 'border-blue-200',
-    hover: 'hover:bg-blue-100',
-    icon: 'text-blue-500'
-  },
-  emerald: {
-    light: 'bg-emerald-50',
-    medium: 'bg-emerald-100',
-    text: 'text-emerald-600',
-    border: 'border-emerald-200',
-    hover: 'hover:bg-emerald-100',
-    icon: 'text-emerald-500'
-  }
-}
 
 export default function CoreServices() {
   // Track which category is expanded
@@ -213,13 +180,6 @@ export default function CoreServices() {
           </div>
         </div>
       </div>
-      
-      {/* Next Step Navigation */}
-      <NextStep 
-        nextSectionId="how-it-works" 
-        label="How does it work?" 
-        sublabel="See how our solutions are implemented"
-      />
     </div>
   )
 } 

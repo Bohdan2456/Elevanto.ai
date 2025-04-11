@@ -148,6 +148,23 @@ export default function Footer() {
           </div>
         </div>
 
+        <div className="border-t border-gray-100 py-8 mt-12">
+          <div className="text-center">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              We Value Your Feedback
+            </h3>
+            <p className="text-gray-600 mb-4 max-w-md mx-auto">
+              Help us improve our services by sharing your experience with Elevanto.ai
+            </p>
+            <Link 
+              href="/survey"
+              className="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary hover:opacity-90 transition-all duration-200"
+            >
+              Take Our Survey
+            </Link>
+          </div>
+        </div>
+
         <div className="mt-12 border-t border-gray-800 pt-8">
           <div className="flex items-center justify-between">
             <p className="text-base text-gray-400">&copy; 2024 Elevanto.ai. All rights reserved.</p>
